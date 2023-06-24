@@ -60,15 +60,6 @@ namespace MVVM.ViewModel
             // Регистрация пользователя через ProfileManager
             Model.Model.ProfileManager profileManager = new Model.Model.ProfileManager();
             bool isRegistered = profileManager.RegisterUser(newUser);
-
-            if (isRegistered)
-            {
-                // Пользователь успешно зарегистрирован, выполните дополнительные действия
-            }
-            else
-            {
-                // Возникла ошибка при регистрации пользователя, выполните дополнительные действия
-            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
