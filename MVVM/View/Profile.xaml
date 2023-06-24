@@ -1,0 +1,27 @@
+﻿<Window x:Class="MVVM.View.Profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM.View"
+        mc:Ignorable="d"
+        Title="Profile" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок страницы -->
+        <TextBlock Grid.Row="0" Margin="10" FontSize="20" FontWeight="Bold" Text="User Profile"/>
+
+        <!-- Имя пользователя -->
+        <TextBlock Grid.Row="1" x:Name="LoginTextBlock" Margin="10" FontSize="16" />
+
+        <!-- Кнопка для редактирования профиля -->
+        <Button Grid.Row="3" Margin="10" Width="100" Height="30" Content="Logout" Click="Button_Click"/>
+    </Grid>
+</Window>
